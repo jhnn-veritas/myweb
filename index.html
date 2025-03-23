@@ -4,41 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veritas Data</title>
+
+    <style>
+        /* Basic Reset and General Styles (Inspired by Netwatch) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', sans-serif; /* A clean, modern font */
+            background-color: #111; /* Dark background */
+            color: #fff; /* White text */
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px; /* Adjust as needed */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #444;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #eee;
+        }
+
+        main {
+            padding-top: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #222; /* Darker section background */
+            border-radius: 5px;
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            color: #ddd;
+            border-bottom: 1px solid #555;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        ul li::before {
+            content: "\2022"; /* Bullet point */
+            color: #aaa;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            color: #888;
+        }
+
+        /* You can add more specific styling here, inspired by the Netwatch site */
+        /* For example, styling for the "tabs," icons, etc. */
+        /* This would require careful inspection of the Netwatch CSS */
+
+    </style>
 </head>
 <body>
 
-    <header>
-        <h1>Veritas Data</h1>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Veritas Data</h1>
+        </header>
 
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>Veritas Data is dedicated to providing reliable and insightful data solutions. We specialize in [mention your specific areas, e.g., data analysis, data warehousing, data visualization, etc.].</p>
-            <p>Our mission is to empower businesses with the data they need to make informed decisions.</p>
-        </section>
+        <main>
+            <section>
+                <h2>About Us</h2>
+                <p>Veritas Data is dedicated to providing reliable and insightful data solutions. We specialize in data analysis, data warehousing, and business intelligence.</p>
+                <p>Our mission is to empower businesses with the data they need to make informed decisions.</p>
+            </section>
 
-        <section>
-            <h2>Our Services</h2>
-            <ul>
-                <li>[Service 1, e.g., Data Analysis]</li>
-                <li>[Service 2, e.g., Data Warehousing]</li>
-                <li>[Service 3, e.g., Business Intelligence]</li>
-                <li>[Service 4, e.g., Custom Data Solutions]</li>
-            </ul>
-        </section>
+            <section>
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Data Analysis</li>
+                    <li>Data Warehousing</li>
+                    <li>Business Intelligence</li>
+                    <li>Custom Data Solutions</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:contact@veritas-data.net">contact@veritas-data.net</a></p>
-            <p>Website: <a href="https://veritas-data.net">veritas-data.net</a></p>
-            <p>Location: [Your Location, if desired]</p>
-        </section>
-    </main>
+            <section>
+                <h2>Contact Us</h2>
+                <p>Email: <a href="mailto:contact@veritas-data.net">contact@veritas-data.net</a></p>
+                <p>Website: <a href="https://veritas-data.net">veritas-data.net</a></p>
+                <p>Location: [Your Location, if desired]</p>
+            </section>
+        </main>
 
-    <footer>
-        <p>&copy; 2024 Veritas Data</p>
-    </footer>
+        <footer>
+            <p>&copy; 2024 Veritas Data</p>
+        </footer>
+    </div>
 
 </body>
 </html>
