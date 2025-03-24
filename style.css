@@ -1,0 +1,347 @@
+body {
+    background-color: #121212;
+    color: #ddd;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.header-text-left {
+    font-size: 2.0em;
+    font-weight: bold;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.header-lines {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right,
+        transparent 0%,
+        transparent 5%,
+        #ddd 5%,
+        #ddd 10%,
+        transparent 10%,
+        transparent 20%,
+        #ddd 20%,
+        #ddd 25%,
+        transparent 25%,
+        transparent 35%,
+        #ddd 35%,
+        transparent 40%,
+        transparent 45%,
+        #ddd 45%,
+        transparent 50%,
+        #ddd 50%,
+        transparent 55%,
+        transparent 60%,
+        #ddd 65%,
+        transparent 65%,
+        transparent 70%,
+        #ddd 70%,
+        transparent 75%,
+        transparent 80%,
+        transparent 85%,
+        transparent 90%,
+        transparent 95%,
+        transparent 100%
+    );
+}
+
+.protocol {
+    font-size: 0.9em;
+    text-align: right;
+    color: #ccc;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    padding: 20px;
+    border-right: 2px solid #444;
+    flex-shrink: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    padding: 12px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+    transition: background-color 0.2s ease;
+}
+
+.menu-item.active {
+    background-color: #333;
+    color: #ff4d4d;
+}
+
+.menu-item:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* --------------- Content Section Styles --------------- */
+.content-section {
+    display: none;
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.content-section.active {
+    display: block;
+}
+
+/* --------------- "Au propos de nous" Styles --------------- */
+#main .about-box {
+    border: 2px solid #444;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #222;
+}
+
+#main .about-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ddd;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#main .about-item {
+    margin-bottom: 10px;
+}
+
+#main .about-item strong {
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #eee;
+}
+
+#main .about-item span {
+    display: block;
+    font-size: 1.0em;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+/* --------------- "Nos Services" Styles --------------- */
+#services .service-box {
+    border: 2px solid #444;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #222;
+}
+
+#services .service-category {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ddd;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#services .service-item {
+    margin-bottom: 10px;
+}
+
+#services .service-item strong {
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #eee;
+}
+
+#services .service-item span {
+    display: block;
+    font-size: 1.0em;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+/* --------------- Lists --------------- */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+ul li::before {
+    content: "\00BB";
+    color: #ff4d4d;
+    position: absolute;
+    left: -20px;
+}
+
+/* --------------- Reports Section --------------- */
+#reports {
+    border-top: 2px solid #444;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.notable-problems {
+    background-color: #222;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-left: 5px solid #ffcc00;
+}
+
+.warning-icon {
+    color: #ffcc00;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.reports-text {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* --------------- RSS Feed --------------- */
+#rss-feed-container {
+    flex-grow: 1;
+}
+
+#rss-feed-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#rss-feed-container li {
+    padding: 5px 0;
+    border-bottom: 1px solid #333;
+}
+
+#rss-feed-container li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+#rss-feed-container li a:hover {
+    text-decoration: underline;
+    color: #ff4d4d;
+}
+
+/* --------------- Footer --------------- */
+footer {
+    border-top: 2px solid #444;
+    padding-top: 10px;
+    text-align: center;
+    color: #999;
+}
+
+/* --------------- Board Section --------------- */
+#board {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border: 2px solid #444;
+}
+
+.thread {
+    margin-bottom: 20px;
+    border: 2px solid #444;
+    padding: 10px;
+    background-color: #222;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.post {
+    margin-bottom: 10px;
+}
+
+.op {
+    /* Styles for the Original Post */
+}
+
+.post-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    color: #aaa;
+    font-size: 0.8em;
+}
+
+.post-id {
+    font-weight: bold;
+    color: #ddd;
+}
+
+.post-date {
+    /* Styles for the date */
+    color: #888;
+}
+
+.post-content {
+    /* Styles for the post text */
+    color: #ccc;
+}
+
+#post-text {
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+#create-thread-button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#create-thread-button:hover {
+    background-color: #cc0000;
+}
