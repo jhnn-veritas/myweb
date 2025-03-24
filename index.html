@@ -1,123 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veritas Data</title>
-
-    <style>
-        /* Basic Reset and General Styles (Inspired by Netwatch) */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Helvetica Neue', sans-serif; /* A clean, modern font */
-            background-color: #111; /* Dark background */
-            color: #fff; /* White text */
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 960px; /* Adjust as needed */
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #444;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            color: #eee;
-        }
-
-        main {
-            padding-top: 20px;
-        }
-
-        section {
-            margin-bottom: 30px;
-            padding: 20px;
-            background-color: #222; /* Darker section background */
-            border-radius: 5px;
-        }
-
-        section h2 {
-            font-size: 1.8em;
-            color: #ddd;
-            border-bottom: 1px solid #555;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
-
-        ul {
-            list-style: none;
-            padding-left: 20px;
-        }
-
-        ul li::before {
-            content: "\2022"; /* Bullet point */
-            color: #aaa;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-        }
-
-        footer {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #444;
-            color: #888;
-        }
-
-        /* You can add more specific styling here, inspired by the Netwatch site */
-        /* For example, styling for the "tabs," icons, etc. */
-        /* This would require careful inspection of the Netwatch CSS */
-
-    </style>
+    <title>Interface Netwatch (Veritas Data)</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="container">
         <header>
-            <h1>Veritas Data</h1>
+            <div class="header-text-left">VERITAS DATA</div>
+            <div class="protocol">
+                PROTOCOLE 5520-444<br>
+                CONNEXION SÉCURISÉE
+            </div>
         </header>
 
-        <main>
-            <section>
-                <h2>About Us</h2>
-                <p>Veritas Data is dedicated to providing reliable and insightful data solutions. We specialize in data analysis, data warehousing, and business intelligence.</p>
-                <p>Our mission is to empower businesses with the data they need to make informed decisions.</p>
-            </section>
+        <div class="content">
+            <div class="sidebar">
+                <div class="menu">
+                    <div class="menu-item active" data-content="main">MAIN</div>
+                    <div class="menu-item" data-content="services">NOS SERVICES</div>
+                    <div class="menu-item" data-content="contact">CONTACT</div>
+                    <div class="menu-item" data-content="board">BOARD</div>
+                </div>
+            </div>
 
-            <section>
-                <h2>Our Services</h2>
-                <ul>
-                    <li>Data Analysis</li>
-                    <li>Data Warehousing</li>
-                    <li>Business Intelligence</li>
-                    <li>Custom Data Solutions</li>
-                </ul>
-            </section>
+            <div class="main-content">
+                <div id="main" class="content-section active">
+                    <p><strong>Au propos de nous</strong></p>
 
-            <section>
-                <h2>Contact Us</h2>
-                <p>Email: <a href="mailto:contact@veritas-data.net">contact@veritas-data.net</a></p>
-                <p>Website: <a href="https://veritas-data.net">veritas-data.net</a></p>
-                <p>Location: [Your Location, if desired]</p>
-            </section>
-        </main>
+                    <div class="about-box">
+                        <span class="about-title">Présentation</span>
+                        <p>Nous sommes une startup qui héberge des données localement pour des projets de communautés et des projets informatiques sur la région de Toulouse.</p>
+                        <p>Veritas Data est une association à but non lucratif qui promeut les projets informatiques de la région toulousaine et facilite la rencontre de personnes passionnées par cette thématique.</p>
+                    </div>
+
+                    <div class="about-box">
+                        <span class="about-title">Domaines d'Intérêt</span>
+                        <div class="about-item">
+                            <strong>Développement de l'Intelligence Artificielle (IA)</strong>
+                            <span>De la création de modèles à l'entraînement et au déploiement.</span><br>	
+                        </div>
+                        <div class="about-item">
+                            <strong>Ingénierie Réseau</strong>
+                            <span>Conception, configuration et administration des réseaux, incluant l'entraînement réseau pour optimiser les performances.</span><br>	
+                        </div>
+                        <div class="about-item">
+                            <strong>Cybersécurité</strong>
+                            <span>Protection des systèmes et des données contre les menaces numériques, avec un focus sur les meilleures pratiques et les techniques de défense.</span><br>	
+                        </div>
+                        <div class="about-item">
+                            <strong>Conteneurisation via Docker</strong>
+                            <span>Hébergement et gestion de projets conteneurisés pour une plus grande flexibilité et portabilité.</span><br>	
+                        </div>
+                        <div class="about-item">
+                            <strong>Hébergement de Projets Divers</strong>
+                            <span>Nous offrons un environnement pour héberger une variété de projets informatiques, allant des applications web aux services spécialisés.</span><br>	
+                        </div>
+                        <div class="about-item">
+                            <strong>Et bien plus</strong>
+                            <span>Notre intérêt s'étend à tous les aspects de l'informatique et nous sommes ouverts à supporter des initiatives innovantes.</span><br>	
+                        </div>
+                    </div>
+
+                </div>
+                <div id="services" class="content-section">
+                    <p><strong>Nos Services</strong></p>
+                    <p>En accord avec nos domaines d'intérêt, nous proposons les services suivants :</p>
+                        <div class="infrastructure-image-container">
+                            <img src="960px-Wikimedia_Foundation_Servers-8055_35.jpg"
+                                alt="IT Infrastructure">
+                        </div>
+                    <div class="service-box-container">
+                        <div class="service-box">
+                            <span class="service-category">Infrastructure et Hébergement</span>
+                            <div class="service-item">
+                                <strong>Hébergement de Serveurs et Projets</strong>
+                                <span>Solutions d'hébergement flexibles pour vos applications et services.</span><br>	
+                            </div>
+                            <div class="service-item">
+                                <strong>Stockage de Données</strong>
+                                <span>Stockage sécurisé et évolutif pour vos données.</span><br>	
+                            </div>
+                            <div class="service-item">
+                                <strong>Conteneurisation via Docker</strong>
+                                <span>Gestion et hébergement de projets conteneurisés pour une flexibilité accrue.</span><br>	
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="infrastructure-image-container">
+                            <img src="500px-Internet_map_1024.jpg"
+                                alt="IT Infrastructure">
+                        </div>
+                    <div class="service-box">
+                        <span class="service-category">Réseau et Sécurité</span>
+                        <div class="service-item">
+                            <strong>Ingénierie Réseau</strong>
+                            <span>Conception, configuration et administration de votre infrastructure réseau.</span><br>	
+                        </div>
+                        <div class="service-item">
+                            <strong>Cybersécurité</strong>
+                            <span>Protection de vos systèmes et données contre les menaces numériques.</span><br>	
+                        </div>
+                    </div>
+                        <div class="infrastructure-image-container">
+                            <img src="570px-Carto_IA_deepLearning.svg.png"
+                                alt="IT Infrastructure">
+                        </div>
+                    <div class="service-box">
+                        <span class="service-category">Intelligence Artificielle</span>
+                        <div class="service-item">
+                            <strong>Support au Développement IA</strong>
+                            <span>Assistance pour la création, l'entraînement et le déploiement de modèles d'IA.</span><br>	
+                        </div>
+                    </div>
+                        <div class="infrastructure-image-container">
+                            <img src="636px-Winter_2004_DreamHack_LAN_Party.jpg"
+                                alt="IT Infrastructure">
+                        </div>
+                    <div class="service-box">
+                        <span class="service-category">Jeux</span>
+                        <div class="service-item">
+                            <strong>Serveurs de Jeux</strong>
+                            <span>Hébergement de serveurs de jeux populaires (Minecraft, GMod, etc.).</span><br>	
+                        </div>
+                    </div>
+
+                </div>
+                <div id="contact" class="content-section">
+                    <p><strong>Contact</strong></p>
+                    <p>Email: <a href="mailto:contact@veritas-data.net">contact@veritas-data.net</a></p>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203494.7552195029!2d1.365825391307223!3d43.60465249999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ac06b015694771%3A0x406ea4210ebd090!2sToulouse%2C%20France!5e0!3m2!1sen!2sus!4v1709033320297!5m2!1sen!2sus" width="600" height="450"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <p>Localisation: Toulouse, Haute-Garonne</p>
+                </div>
+
+                <div id="board" class="content-section">
+                    <div class="thread">
+                        <div class="post op">
+                            <div class="post-info">
+                                <span class="post-id">OP</span>
+                                <span class="post-date"></span>
+                            </div>
+                            <div class="post-content">
+                                <textarea id="post-text" placeholder="Start a new thread"></textarea>
+                                <button id="create-thread-button">Create Thread</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="threads-container">
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
         <footer>
-            <p>&copy; 2024 Veritas Data</p>
+            <div class="bottom-barcodes">
+            </div>
         </footer>
     </div>
 
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const threadsContainer = document.getElementById('threads-container');
+            const postText = document.getElementById('post-text');
+            const createThreadButton = document.getElementById('create-thread-button');
+
+            createThreadButton.addEventListener('click', () => {
+                const text = postText.value.trim();
+                if (text) {
+                    const threadDiv = createThreadElement(text);
+                    threadsContainer.prepend(threadDiv); // Add new thread to the top
+                    postText.value = '';
+                }
+            });
+
+            function createThreadElement(text) {
+                const threadDiv = document.createElement('div');
+                threadDiv.classList.add('thread');
+
+                const postDiv = document.createElement('div');
+                postDiv.classList.add('post', 'op');
+
+                const postInfoDiv = document.createElement('div');
+                postInfoDiv.classList.add('post-info');
+
+                const postIdSpan = document.createElement('span');
+                postIdSpan.classList.add('post-id');
+                postIdSpan.textContent = 'OP';
+
+                const postDateSpan = document.createElement('span');
+                postDateSpan.classList.add('post-date');
+                postDateSpan.textContent = getCurrentDate(); // Function to get current date/time (see below)
+
+                const postContentDiv = document.createElement('div');
+                postContentDiv.classList.add('post-content');
+                postContentDiv.textContent = text;
+
+                postInfoDiv.appendChild(postIdSpan);
+                postInfoDiv.appendChild(postDateSpan);
+                postDiv.appendChild(postInfoDiv);
+                postDiv.appendChild(postContentDiv);
+
+                threadDiv.appendChild(postDiv);
+                return threadDiv;
+            }
+
+            function getCurrentDate() {
+                const now = new Date();
+                const year = now.getFullYear();
+                const month = String(now.getMonth() + 1).padStart(2, '0');
+                const day = String(now.getDate()).padStart(2, '0');
+                const hours = String(now.getHours()).padStart(2, '0');
+                const minutes = String(now.getMinutes()).padStart(2, '0');
+                return `${year}-${month}-${day} ${hours}:${minutes}`;
+            }
+
+            //  Modified section to change initial threads
+            const initialThreads = [
+                "J'ai créé ce site pour débloquer le potentiel.",
+                "Je m'entraîne à faire une page de découverte et j'ai réussi via GitHub Pages.",
+                "J'ai enfin compris comment héberger et modifier du code web!",
+                "Je pense que je vais créer un board de messages dans le futur...",
+            ];
+            initialThreads.forEach(text => {
+                const thread = createThreadElement(text);
+                threadsContainer.appendChild(thread);
+            });
+
+        });
+    </script>
 </body>
+
 </html>
